@@ -1,5 +1,7 @@
 import "../styles/globals.css";
 import Navbar from "../components/navbar/navbar.component";
+import LeftBar from "../components/sidebar/leftSide.component";
+
 export default function RootLayout({
   children,
 }: {
@@ -10,6 +12,7 @@ export default function RootLayout({
       <head />
       <body className='dark'>
         <Navbar />
+        <LeftBar />
         {children}
       </body>
     </html>
