@@ -5,16 +5,22 @@ const SocialSide: FC = () => {
   return (
     <div className='w-32'>
       <Link href='/'>Sochea</Link>
-      <div className='mt-64'>
-        <ul>
+      <div className='md:mt-64'>
+        <ul className='hidden md:block'>
           <li className='mt-4'>
-            <SiLinkedin className='text-2xl' />
+            <Link href='https://www.linkedin.com/in/sokchea-leang-916684221/'>
+              <SiLinkedin className='text-2xl' />
+            </Link>
           </li>
           <li className='mt-4'>
-            <SiGithub className='text-2xl' />
+            <Link href='https://github.com/sokcheadev2001'>
+              <SiGithub className='text-2xl' />
+            </Link>
           </li>
           <li className='mt-4'>
-            <SiTwitter className='text-2xl' />
+            <Link href='https://twitter.com/LeangSokchea'>
+              <SiTwitter className='text-2xl' />
+            </Link>
           </li>
         </ul>
       </div>

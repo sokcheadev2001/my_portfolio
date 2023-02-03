@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         secondary: "#f2f0ee",
+        lightgray: ''
       },
     },
   },
