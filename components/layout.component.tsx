@@ -26,23 +26,72 @@ const Layout = ({ children }: Props) => {
   return (
     <>
       <Head>
-        <title>Sokchea Leang | Portfolio</title>
+        <title>Sokchea Leang</title>
         <meta
           name='description'
           content='Sokchea Leang is a web developer who specializes in handling & building digital experiences.'
         ></meta>
+        <meta name='image' content='https://sokchea.me/favicon.png'></meta>
         <meta name='generator' content='Next JS 13'></meta>
-        <meta
-          property='og:title'
-          content='Sokchea Leang | Web Developer'
-        ></meta>
+        <link rel='icon' href='/favicon.png' type='image/png' />
+        <link
+          rel='apple-touch-icon'
+          sizes='48x48'
+          href='/favicon48x48.png'
+        ></link>
+        <link
+          rel='apple-touch-icon'
+          sizes='72x72'
+          href='/favicon72x72.png'
+        ></link>
+        <link
+          rel='apple-touch-icon'
+          sizes='96x96'
+          href='/favicon96x96.png'
+        ></link>
+        <link
+          rel='apple-touch-icon'
+          sizes='144x144'
+          href='/favicon144x144.png'
+        ></link>
+        <link
+          rel='apple-touch-icon'
+          sizes='192x192'
+          href='/favicon192x192.png'
+        ></link>
+        <link
+          rel='apple-touch-icon'
+          sizes='256x256'
+          href='/favicon256x256.png'
+        ></link>
+        <link
+          rel='apple-touch-icon'
+          sizes='384x384'
+          href='/favicon384x384.png'
+        ></link>
+        <link
+          rel='apple-touch-icon'
+          sizes='512x512'
+          href='/favicon512x512.png'
+        ></link>
+        <meta property='og:title' content='Sokchea Leang'></meta>
         <meta
           property='og:description'
           content='Sokchea Leang is a web developer who specializes in handling & building digital experiences.'
         ></meta>
         <meta property='og:url' content='https://sokchea.me/'></meta>
         <meta property='og:type' content='website'></meta>
-        <link rel='icon' href='/favicon.png' />
+        <meta name='twitter:card' content='summary_large_image'></meta>
+        <meta name='twitter:creator' content='@LeangSokchea'></meta>
+        <meta name='twitter:title' content='Sokchea Leang'></meta>
+        <meta
+          name='twitter:description'
+          content='Sokchea Leang is a web developer who specializes in handling & building digital experiences.'
+        ></meta>
+        <meta
+          name='twitter:image'
+          content='https://sokchea.me/favicon.png'
+        ></meta>
       </Head>
       {Component()}
       <div className='cursor rounded' />

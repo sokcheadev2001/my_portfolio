@@ -1,0 +1,74 @@
+import { motion } from "framer-motion";
+import Image from "next/image";
+import NAME_DATA from "../../name";
+import Button from "../button/button.component";
+
+const Heading = () => {
+  const NameList = NAME_DATA.map((name) => (
+    <motion.span
+      key={name.letter}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: name.delay, duration: 1.5 }}
+    >
+      {name.letter}
+    </motion.span>
+  ));
+  return (
+    <header className='mt-10 md:flex'>
+      <div className='md:flex-1 py-10'>
+        <motion.p
+          className='dark:text-white text-black mb-8 text-center md:text-left'
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+        >
+          Hi :-D, my name is
+        </motion.p>
+        <motion.h1 className='text-6xl leading-none mb-4 text-center md:text-left font-bold md:font-extrabold'>
+          {NameList}
+        </motion.h1>
+        <motion.p
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 2, duration: 1 }}
+          className='text-xl md:text-2xl uppercase text-center md:text-left'
+        >
+          web developer
+        </motion.p>
+        <motion.p
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 2.2, duration: 1 }}
+          className='text-base mt-10 text-center md:text-left md:w-96 md:px-0 px-5'
+        >
+          In 2022, I graduated from Royal University of Phnom Penh with a degree
+          in computer science. Currently, I am focused on bulding and learning
+          new modern website.
+        </motion.p>
+        <motion.div
+          className='md:mt-14 mt-8'
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 2.4, duration: 1 }}
+        >
+          <Button
+            destination='/resume'
+            className='py-4 px-8 border border-cyan-500 rounded-md hover:bg-cyan-600/50 '
+            name='Check out my resume!'
+          />
+        </motion.div>
+      </div>
+      <div className='md:flex-1 py-10 top-0 bottom-0'>
+        <Image
+          src='/favicon.png'
+          width='200'
+          height='100'
+          alt='Sokchea Leang'
+        />
+      </div>
+    </header>
+  );
+};
+
+export default Heading;

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { FC } from "react";
 import { SiGithub, SiLinkedin, SiTwitter } from "react-icons/si";
@@ -7,21 +8,42 @@ const SocialSide: FC = () => {
       <Link href='/'>Sochea</Link>
       <div className='md:mt-64'>
         <ul className='hidden md:block'>
-          <li className='mt-4'>
+          <motion.li
+            whileHover={{
+              scale: 1.2,
+              transition: { duration: 0.3 },
+            }}
+            whileTap={{ scale: 0.9 }}
+            className='mt-4'
+          >
             <Link href='https://www.linkedin.com/in/sokchea-leang-916684221/'>
               <SiLinkedin className='text-2xl' />
             </Link>
-          </li>
-          <li className='mt-4'>
+          </motion.li>
+          <motion.li
+            whileHover={{
+              scale: 1.2,
+              transition: { duration: 0.3 },
+            }}
+            whileTap={{ scale: 0.9 }}
+            className='mt-4'
+          >
             <Link href='https://github.com/sokcheadev2001'>
               <SiGithub className='text-2xl' />
             </Link>
-          </li>
-          <li className='mt-4'>
+          </motion.li>
+          <motion.li
+            whileHover={{
+              scale: 1.2,
+              transition: { duration: 0.3 },
+            }}
+            whileTap={{ scale: 0.9 }}
+            className='mt-4'
+          >
             <Link href='https://twitter.com/LeangSokchea'>
               <SiTwitter className='text-2xl' />
             </Link>
-          </li>
+          </motion.li>
         </ul>
       </div>
     </div>

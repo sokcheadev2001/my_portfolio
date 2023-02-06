@@ -52,7 +52,7 @@ const NavBar: FC = () => {
               className='flex items-center justify-items-center'
               whileHover={{
                 scale: 1.1,
-                transition: { duration: 0.8 },
+                transition: { duration: 0.3 },
               }}
               whileTap={{ scale: 0.8 }}
             >
@@ -65,7 +65,7 @@ const NavBar: FC = () => {
               className='flex items-center justify-items-center'
               whileHover={{
                 scale: 1.1,
-                transition: { duration: 0.8 },
+                transition: { duration: 0.3 },
               }}
               whileTap={{ scale: 0.8 }}
             >
