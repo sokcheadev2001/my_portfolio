@@ -1,5 +1,5 @@
 import type { AppProps } from "next/app";
-import Layout from "../components/layout.component";
+import Layout from "../components/layout/layout.component";
 import { ThemeProvider } from "next-themes";
 import { Roboto } from "@next/font/google";
 import "../styles/globals.css";

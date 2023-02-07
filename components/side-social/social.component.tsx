@@ -5,7 +5,9 @@ import { SiGithub, SiLinkedin, SiTwitter } from "react-icons/si";
 const SocialSide: FC = () => {
   return (
     <div className='w-32'>
-      <Link href='/'>Sochea</Link>
+      <Link href='/' className='dark:text-brightGray'>
+        Sochea
+      </Link>
       <div className='md:mt-64'>
         <ul className='hidden md:block'>
           <motion.li
@@ -17,7 +19,7 @@ const SocialSide: FC = () => {
             className='mt-4'
           >
             <Link href='https://www.linkedin.com/in/sokchea-leang-916684221/'>
-              <SiLinkedin className='text-2xl' />
+              <SiLinkedin className='text-2xl  dark:text-brightGray text-gray-800 dark:hover:text-white' />
             </Link>
           </motion.li>
           <motion.li
@@ -29,7 +31,7 @@ const SocialSide: FC = () => {
             className='mt-4'
           >
             <Link href='https://github.com/sokcheadev2001'>
-              <SiGithub className='text-2xl' />
+              <SiGithub className='text-2xl dark:text-brightGray text-gray-800 dark:hover:text-white' />
             </Link>
           </motion.li>
           <motion.li
@@ -41,7 +43,7 @@ const SocialSide: FC = () => {
             className='mt-4'
           >
             <Link href='https://twitter.com/LeangSokchea'>
-              <SiTwitter className='text-2xl' />
+              <SiTwitter className='text-2xl  dark:text-brightGray text-gray-800 dark:hover:text-white' />
             </Link>
           </motion.li>
         </ul>

@@ -20,14 +20,14 @@ const NavBar: FC = () => {
     if (currentTheme === "dark") {
       return (
         <FaSun
-          className='text-lg inline-block'
+          className='text-lg inline-block text-brightGray hover:text-yellow-600'
           onClick={() => setTheme("light")}
         />
       );
     } else {
       return (
         <FaMoon
-          className='text-lg inline-block'
+          className='text-lg inline-block text-gray-800 hover:text-lightGray'
           onClick={() => setTheme("dark")}
         />
       );
@@ -37,7 +37,7 @@ const NavBar: FC = () => {
     <nav>
       <div className='hidden md:flex'>
         <div className='md:flex-1 text-sm'>
-          <div className='dark:text-white font-bold md:ml-4 inline-block py-1 px-2 f-link'>
+          <div className='dark:text-brightGray text-gray-800 font-bold md:ml-4 inline-block py-1 px-2 f-link'>
             <a href='mailto:leang.sokchea13@gmail.com'>
               leang.sokchea13@gmail.com
             </a>
@@ -47,7 +47,10 @@ const NavBar: FC = () => {
           </span>
         </div>
         <div className='flex gap-5'>
-          <Link href='/resume' className='dark:text-white'>
+          <Link
+            href='/resume'
+            className='dark:text-brightGray text-gray-800 dark:hover:text-teal-400 hover:text-lightGray'
+          >
             <motion.button
               className='flex items-center justify-items-center'
               whileHover={{
@@ -60,7 +63,10 @@ const NavBar: FC = () => {
               Resume
             </motion.button>
           </Link>
-          <Link href='/contact' className='dark:text-white'>
+          <Link
+            href='/contact'
+            className='dark:text-brightGray text-gray-800 dark:hover:text-teal-400 hover:text-lightGray'
+          >
             <motion.button
               className='flex items-center justify-items-center'
               whileHover={{

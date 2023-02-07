@@ -1,6 +1,6 @@
 import Head from "next/head";
-import NavBar from "./navbar/nav.component";
-import SocialSide from "./side-social/social.component";
+import NavBar from "./nav.component";
+import SocialSide from "../side-social/social.component";
 import { motion, useScroll, useSpring } from "framer-motion";
 
 function Component() {
@@ -96,8 +96,8 @@ const Layout = ({ children }: Props) => {
       {Component()}
       <div className='cursor rounded' />
       <div className='cursor pointed' />
-      <div className='bg-secondary dark:bg-gray-900 md:py-16'>
-        <div className='bg-white dark:bg-gray-900 md:max-w-6xl md:mx-auto sm:rounded-lg p-2 md:p-8 md:shadow-2xl'>
+      <div className='bg-secondary dark:bg-primary md:py-16'>
+        <div className='bg-white dark:bg-primary md:max-w-6xl md:mx-auto sm:rounded-lg p-6 md:p-8 md:shadow-2xl'>
           <div className='md:flex'>
             <div>
               <SocialSide />
