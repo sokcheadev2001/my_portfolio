@@ -7,7 +7,7 @@ type Children = {
 
 export const Section = ({ children }: Children) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref);
 
   return (
     <section ref={ref}>

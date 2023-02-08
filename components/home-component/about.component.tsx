@@ -100,7 +100,7 @@ const IcanDo = () => {
             className='md:flex-1 md:pl-10'
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 2.2, duration: 1 }}
+            // transition={{ delay: 2.2, duration: 1 }}
             whileHover={{
               scale: 1.1,
               transition: { duration: 0.3 },
