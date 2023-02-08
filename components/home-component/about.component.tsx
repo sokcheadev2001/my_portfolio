@@ -5,7 +5,7 @@ import { Section } from "../framer-motion/motion.component";
 const IcanDo = () => {
   return (
     <Section>
-      <section className='md:mt-32 mt-20'>
+      <div className='md:mt-24 mt-16'>
         <motion.div
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -47,7 +47,7 @@ const IcanDo = () => {
             </motion.p>
             <motion.ul className='grid grid-cols-2 gap-4 pt-5'>
               <motion.li
-                className='text-sm relative md:pl-5 pl-3 before:content-["▹"] before:absolute before:left-0 before:text-teal-400'
+                className='dark:text-darkGray text-lightGray text-sm relative md:pl-5 pl-3 before:content-["▹"] before:absolute before:left-0 before:text-teal-400'
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 2.2, duration: 1 }}
@@ -55,7 +55,7 @@ const IcanDo = () => {
                 Laravel
               </motion.li>
               <motion.li
-                className='text-sm relative md:pl-5 pl-3 before:content-["▹"] before:absolute before:left-0 before:text-teal-400'
+                className='dark:text-darkGray text-lightGray text-sm relative md:pl-5 pl-3 before:content-["▹"] before:absolute before:left-0 before:text-teal-400'
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 2.2, duration: 1 }}
@@ -63,7 +63,7 @@ const IcanDo = () => {
                 Node Js
               </motion.li>
               <motion.li
-                className='text-sm relative md:pl-5 pl-3 before:content-["▹"] before:absolute before:left-0 before:text-teal-400'
+                className='dark:text-darkGray text-lightGray text-sm relative md:pl-5 pl-3 before:content-["▹"] before:absolute before:left-0 before:text-teal-400'
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 2.4, duration: 1 }}
@@ -71,7 +71,7 @@ const IcanDo = () => {
                 Javascript ES6
               </motion.li>
               <motion.li
-                className='text-sm relative md:pl-5 pl-3 before:content-["▹"] before:absolute before:left-0 before:text-teal-400'
+                className='dark:text-darkGray text-lightGray text-sm relative md:pl-5 pl-3 before:content-["▹"] before:absolute before:left-0 before:text-teal-400'
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 2.4, duration: 1 }}
@@ -79,7 +79,7 @@ const IcanDo = () => {
                 Typescript
               </motion.li>
               <motion.li
-                className='text-sm relative md:pl-5 pl-3 before:content-["▹"] before:absolute before:left-0 before:text-teal-400'
+                className='dark:text-darkGray text-lightGray text-sm relative md:pl-5 pl-3 before:content-["▹"] before:absolute before:left-0 before:text-teal-400'
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 3, duration: 1 }}
@@ -87,7 +87,7 @@ const IcanDo = () => {
                 React Js
               </motion.li>
               <motion.li
-                className='text-sm relative md:pl-5 pl-3 before:content-["▹"] before:absolute before:left-0 before:text-teal-400'
+                className='dark:text-darkGray text-lightGray text-sm relative md:pl-5 pl-3 before:content-["▹"] before:absolute before:left-0 before:text-teal-400'
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 3, duration: 1 }}
@@ -100,9 +100,8 @@ const IcanDo = () => {
             className='md:flex-1 md:pl-10'
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            // transition={{ delay: 2.2, duration: 1 }}
             whileHover={{
-              scale: 1.1,
+              scale: 0.9,
               transition: { duration: 0.3 },
             }}
           >
@@ -116,7 +115,7 @@ const IcanDo = () => {
             />
           </motion.div>
         </div>
-      </section>
+      </div>
     </Section>
   );
 };

@@ -15,7 +15,7 @@ const Heading = () => {
     </motion.span>
   ));
   return (
-    <header className='mt-10 md:flex'>
+    <header className='md:my-24 my-16 md:flex'>
       <div className='md:flex-1 py-10'>
         <motion.p
           className='dark:text-brightGray text-gray-800 mb-8 text-center md:text-left'
@@ -42,8 +42,9 @@ const Heading = () => {
           transition={{ delay: 2.2, duration: 1 }}
           className='leading-7 dark:text-darkGray text-lightGray text-base mt-10 text-center md:text-left md:w-96 md:px-0 px-5'
         >
-          I&apos;m a backend developer baseed in Phnom Penh, Cambodia. Currently, I am focused on
-          bulding and learning full-stack development.
+          I&apos;m a backend developer baseed in Phnom Penh, Cambodia.
+          Currently, I am focused on bulding and learning full-stack
+          development.
         </motion.p>
         <motion.div
           className='md:mt-14 mt-8 flex flex-col items-center md:block'
