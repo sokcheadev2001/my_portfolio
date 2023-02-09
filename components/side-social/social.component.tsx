@@ -18,7 +18,10 @@ const SocialSide: FC = () => {
             whileTap={{ scale: 0.9 }}
             className='mt-4'
           >
-            <Link href='https://www.linkedin.com/in/sokchea-leang-916684221/'>
+            <Link
+              href='https://www.linkedin.com/in/sokchea-leang-916684221/'
+              aria-label='linkedin profile'
+            >
               <SiLinkedin className='text-2xl  dark:text-brightGray text-gray-800 dark:hover:text-white' />
             </Link>
           </motion.li>
@@ -30,7 +33,10 @@ const SocialSide: FC = () => {
             whileTap={{ scale: 0.9 }}
             className='mt-4'
           >
-            <Link href='https://github.com/sokcheadev2001'>
+            <Link
+              href='https://github.com/sokcheadev2001'
+              aria-label='github profile'
+            >
               <SiGithub className='text-2xl dark:text-brightGray text-gray-800 dark:hover:text-white' />
             </Link>
           </motion.li>
@@ -42,7 +48,10 @@ const SocialSide: FC = () => {
             whileTap={{ scale: 0.9 }}
             className='mt-4'
           >
-            <Link href='https://twitter.com/LeangSokchea'>
+            <Link
+              href='https://twitter.com/LeangSokchea'
+              aria-label='twitter profile'
+            >
               <SiTwitter className='text-2xl  dark:text-brightGray text-gray-800 dark:hover:text-white' />
             </Link>
           </motion.li>

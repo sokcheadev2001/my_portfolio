@@ -101,8 +101,8 @@ const IcanDo = () => {
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             whileHover={{
-              scale: 0.9,
-              transition: { duration: 0.3 },
+              scale: 1.05,
+              transition: { type: "spring", stiffness: 400, damping: 10 },
             }}
           >
             <Image
