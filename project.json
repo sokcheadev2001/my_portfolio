@@ -1,0 +1,16 @@
+[
+    {
+        "projectUrl": "https://github.com/sokcheadev2001/React-Store",
+        "projectDemo": "",
+        "projectTitle": "React Store",
+        "projectDescription": "Build store front using react js and firebase",
+        "projectLanguages": "React Js, Firebase"
+    },
+    {
+        "projectUrl": "https://github.com/sokcheadev2001/my_portfolio",
+        "projectDemo": "",
+        "projectTitle": "My Portfolio",
+        "projectDescription": "Using next js for manage the web and supabase as the backbone",
+        "projectLanguages": "Next Js, Tailwind Css, Supabase"
+    }
+]
