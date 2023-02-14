@@ -59,13 +59,14 @@ const Heading = () => {
           />
         </motion.div>
       </div>
-      <div className='md:flex-1 py-10 top-0 bottom-0'>
+      <div className='md:block flex md:flex-1 lg:py-0 md:py-10 top-0 bottom-0 md:ml-0 dark:drop-shadow-2darkShadow drop-shadow-2lightShadow justify-center'>
         <Image
-          src='/favicon.png'
-          width='200'
-          height='100'
+          src='/avatar.png'
+          width='330'
+          height='200'
           alt='Sokchea Leang'
           priority
+          className='flex'
         />
       </div>
     </header>

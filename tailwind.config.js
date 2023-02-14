@@ -21,6 +21,10 @@ module.exports = {
       width: {
         74: "300px",
       },
+      dropShadow: {
+        "2darkShadow": "0 0 0.75rem cyan",
+        "2lightShadow": "0 0 0.75rem gray",
+      },
     },
   },
   plugins: [],

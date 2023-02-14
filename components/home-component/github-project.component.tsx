@@ -2,7 +2,7 @@ import { FC } from "react";
 import { motion } from "framer-motion";
 import { Section } from "../framer-motion/motion.component";
 import ProjectBox from "../projectbox/project-box.component";
-import "../../project.json";
+
 const Project: FC = () => {
   const Project = {
     projectUrl: "https://github.com/sokcheadev2001/React-Store.git",
