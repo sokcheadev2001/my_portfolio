@@ -1,17 +1,17 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import NAME_DATA from "../../name";
+import { User } from "../../types/User/user.type";
 import Button from "../button/button.component";
 
-const Heading = () => {
-  const NameList = NAME_DATA.map((name) => (
+const Heading = ({ title, name, position, description }: User) => {
+  const NameList = Array.from(name).map((nametext, index) => (
     <motion.span
-      key={name.letter}
+      key={index}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ delay: name.delay, duration: 1.5 }}
+      transition={{ delay: index / 3.2, duration: 1.2 }}
     >
-      {name.letter}
+      {nametext}
     </motion.span>
   ));
   return (
@@ -23,7 +23,7 @@ const Heading = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}
         >
-          Hi :-D, my name is
+          {title}
         </motion.p>
         <motion.h1 className='dark:text-teal-400 text-teal-600 text-6xl leading-none mb-4 text-center md:text-left font-bold md:font-extrabold'>
           {NameList}
@@ -34,7 +34,7 @@ const Heading = () => {
           transition={{ delay: 2, duration: 1 }}
           className='dark:text-brightGray text-gray-800 text-xl md:text-2xl capitalize text-center md:text-left'
         >
-          web developer
+          {position}
         </motion.p>
         <motion.p
           initial={{ y: 100, opacity: 0 }}
@@ -42,9 +42,7 @@ const Heading = () => {
           transition={{ delay: 2.2, duration: 1 }}
           className='leading-7 dark:text-darkGray text-lightGray text-base mt-10 text-center md:text-left md:w-96 md:px-0 px-5'
         >
-          I&apos;m a backend developer baseed in Phnom Penh, Cambodia.
-          Currently, I am focused on bulding and learning full-stack
-          development.
+          {description}
         </motion.p>
         <motion.div
           className='md:mt-14 mt-8 flex flex-col items-center md:block'
@@ -59,7 +57,7 @@ const Heading = () => {
           />
         </motion.div>
       </div>
-      <div className='md:block flex md:flex-1 lg:py-0 md:py-10 top-0 bottom-0 md:ml-0 dark:drop-shadow-2darkShadow drop-shadow-2lightShadow justify-center'>
+      <div className='md:block flex md:flex-1 lg:py-0 md:py-10 top-0 bottom-0 md:ml-0 hover:dark:drop-shadow-2darkShadow hover:drop-shadow-2lightShadow justify-center'>
         <Image
           src='/avatar.png'
           width='330'
