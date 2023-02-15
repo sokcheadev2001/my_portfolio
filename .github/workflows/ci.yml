@@ -45,6 +45,11 @@ jobs:
       - name: Install Deps
         run: npm install
 
+      - name: Setup Env
+        run: |
+          echo "SUPERBASE_URL=${{ secrets.SUPABASE_URL }}" >> .env
+          echo "SUPABASE_ANON_KEY=${{ secrets.SUPABASE_ANON_KEY }}" >> .env
+
       - name: Build
         run: npm run build
 
