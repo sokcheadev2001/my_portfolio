@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { Section } from "../framer-motion/motion.component";
+import VerticalTabs from "../mui/tab";
 
 const Experiences = () => {
   return (
@@ -16,6 +17,7 @@ const Experiences = () => {
             Experience
           </h2>
         </motion.div>
+        <VerticalTabs />
       </div>
     </Section>
   );

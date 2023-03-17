@@ -1,4 +1,3 @@
-import { FC } from "react";
 import Heading from "../components/home-component/heading.component";
 import IcanDo from "../components/home-component/about.component";
 import Experiences from "../components/home-component/experience.component";
@@ -8,6 +7,7 @@ import { NextPage } from "next";
 import { User } from "../types/User/user.type";
 
 const Home: NextPage<{ user: User }> = ({ user }) => {
+  if (!user) return <div>Loading...</div>;
   return (
     <>
       <Heading {...user} />

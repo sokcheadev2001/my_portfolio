@@ -15,7 +15,7 @@ const Heading = ({ title, name, position, description }: User) => {
     </motion.span>
   ));
   return (
-    <header className='md:my-24 my-16 md:flex'>
+    <header className='md:my-24 my-12 md:flex'>
       <div className='md:flex-1 py-10'>
         <motion.p
           className='dark:text-brightGray text-gray-800 mb-8 text-center md:text-left'
@@ -25,7 +25,7 @@ const Heading = ({ title, name, position, description }: User) => {
         >
           {title}
         </motion.p>
-        <motion.h1 className='dark:text-teal-400 text-teal-600 text-6xl leading-none mb-4 text-center md:text-left font-bold md:font-extrabold'>
+        <motion.h1 className='dark:text-teal-400 text-teal-600 md:text-6xl text-5xl leading-none mb-4 text-center md:text-left font-bold md:font-extrabold'>
           {NameList}
         </motion.h1>
         <motion.p
@@ -52,15 +52,15 @@ const Heading = ({ title, name, position, description }: User) => {
         >
           <Button
             destination='/resume'
-            className='dark:text-teal-400 text-teal-600 py-4 px-8 border border-teal-400 dark:border-teal-600 rounded-md dark:hover:bg-gray-800 hover:bg-gray-100'
+            className='dark:text-teal-400 text-teal-600 md:py-4 md:px-8 py-2 px-4 border border-teal-400 dark:border-teal-600 rounded-md dark:hover:bg-gray-800 hover:bg-gray-100'
             name='Check out my resume!'
           />
         </motion.div>
       </div>
-      <div className='md:block flex md:flex-1 lg:py-0 md:py-10 top-0 bottom-0 md:ml-0 hover:dark:drop-shadow-2darkShadow hover:drop-shadow-2lightShadow justify-center'>
+      <div className='mx-auto w-52 md:block flex md:flex-1 lg:py-0 md:py-10 md:top-0 md:bottom-0 md:ml-0 hover:dark:drop-shadow-2darkShadow hover:drop-shadow-2lightShadow justify-center'>
         <Image
           src='/avatar.png'
-          width='330'
+          width='320'
           height='200'
           alt='Sokchea Leang'
           priority

@@ -13,7 +13,7 @@ function Component() {
 
   return (
     <motion.div
-      className='progress-bar dark:bg-gray-200 bg-gray-700'
+      className='progress-bar dark:bg-gray-200 bg-gray-700 z-[100]'
       style={{ scaleX }}
     />
   );
