@@ -17,7 +17,9 @@ const Experiences = () => {
             Experience
           </h2>
         </motion.div>
-        <VerticalTabs />
+        <div className='mt-10'>
+          <VerticalTabs />
+        </div>
       </div>
     </Section>
   );

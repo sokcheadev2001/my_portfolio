@@ -23,7 +23,7 @@ function TabPanel(props: TabPanelProps) {
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
+          <div>{children}</div>
         </Box>
       )}
     </div>
@@ -61,15 +61,28 @@ export default function VerticalTabs() {
         aria-label='Vertical tabs example'
         sx={{ borderRight: 1, borderColor: "divider" }}
       >
-        <Tab label='Item One' {...a11yProps(0)} />
-        <Tab label='Item Two' {...a11yProps(1)} />
+        <Tab label='TRUSTED IT BUSINESS' {...a11yProps(0)} />
+        {/* <Tab label='Item Two' {...a11yProps(1)} /> */}
       </Tabs>
       <TabPanel value={value} index={0}>
-        Item Two
+        <span className='dark:text-brightGray text-gray-800 md:text-2xl text-xl font-bold leading-none capitalize'>
+          Backend developer @{" "}
+        </span>
+        <span className='dark:text-teal-400 text-teal-600 md:text-2xl text-xl font-bold leading-none capitalize'>
+          TITB
+        </span>
+        <div>DEC 2022 - PRESENT</div>
+        <ul>
+          <li>
+            Collaborate with experienced cross-disciplinary Amazonians to
+            conceive, design, and bring innovative products and services to
+            market.
+          </li>
+        </ul>
       </TabPanel>
-      <TabPanel value={value} index={1}>
+      {/* <TabPanel value={value} index={1}>
         Item Two
-      </TabPanel>
+      </TabPanel> */}
     </Box>
   );
 }
