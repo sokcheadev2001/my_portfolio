@@ -26,4 +26,4 @@ const UseMediaQuery = (width: number) => {
   return targetReached;
 };
 
-export default useMediaQuery;
+export default UseMediaQuery;
