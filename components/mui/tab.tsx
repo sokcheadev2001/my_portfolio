@@ -65,18 +65,20 @@ export default function VerticalTabs() {
         {/* <Tab label='Item Two' {...a11yProps(1)} /> */}
       </Tabs>
       <TabPanel value={value} index={0}>
-        <span className='dark:text-brightGray text-gray-800 md:text-2xl text-xl font-bold leading-none capitalize'>
-          Backend developer @{" "}
-        </span>
-        <span className='dark:text-teal-400 text-teal-600 md:text-2xl text-xl font-bold leading-none capitalize'>
-          TITB
-        </span>
-        <div>DEC 2022 - PRESENT</div>
-        <ul>
-          <li>
-            Collaborate with experienced cross-disciplinary Amazonians to
-            conceive, design, and bring innovative products and services to
-            market.
+        <h3>
+          <span className='dark:text-brightGray text-gray-800 md:text-2xl text-xl font-bold leading-none capitalize'>
+            Backend developer @{" "}
+          </span>
+          <span className='dark:text-teal-400 text-teal-600 md:text-2xl text-xl font-bold leading-none capitalize'>
+            TITB
+          </span>
+        </h3>
+        <p className='leading-7 dark:text-darkGray text-lightGray'>
+          DEC 2022 - PRESENT
+        </p>
+        <ul className='pt-6'>
+          <li className='dark:text-darkGray text-lightGray text-sm relative md:pl-5 pl-3 before:content-["▹"] before:absolute before:left-0 before:text-teal-400'>
+            ...
           </li>
         </ul>
       </TabPanel>
