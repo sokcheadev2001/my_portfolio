@@ -1,6 +1,6 @@
 import { useState, useCallback, useEffect } from "react";
 
-const useMediaQuery = (width: number) => {
+const UseMediaQuery = (width: number) => {
   const [targetReached, setTargetReached] = useState(false);
 
   const updateTarget = useCallback((e: MediaQueryListEvent) => {
@@ -10,7 +10,7 @@ const useMediaQuery = (width: number) => {
       setTargetReached(false);
     }
   }, []);
-  
+
   useEffect(() => {
     const media = window.matchMedia(`(max-width: ${width}px)`);
     media.addEventListener("change", updateTarget);

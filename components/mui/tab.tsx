@@ -2,7 +2,7 @@ import * as React from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
-import useMediaQuery from "../../hooks/mediaQuery";
+import UseMediaQuery from "../../hooks/mediaQuery";
 import Link from "next/link";
 
 interface TabPanelProps {
@@ -12,7 +12,7 @@ interface TabPanelProps {
 }
 
 function TabPanel(props: TabPanelProps) {
-  const isHorizontal = useMediaQuery(600);
+  const isHorizontal = UseMediaQuery(600);
   const { children, value, index, ...other } = props;
   if (!isHorizontal) {
     return (
@@ -50,7 +50,7 @@ function TabPanel(props: TabPanelProps) {
 }
 
 function a11yProps(index: number) {
-  const isHorizontal = useMediaQuery(600);
+  const isHorizontal = UseMediaQuery(600);
   if (isHorizontal) {
     return {
       id: `full-width-tab-${index}`,
@@ -65,7 +65,7 @@ function a11yProps(index: number) {
 }
 
 export default function VerticalTabs() {
-  const isHorizontal = useMediaQuery(600);
+  const isHorizontal = UseMediaQuery(600);
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
