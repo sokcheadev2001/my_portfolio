@@ -2,6 +2,7 @@ import Head from "next/head";
 import NavBar from "./nav.component";
 import SocialSide from "../side-social/social.component";
 import { motion, useScroll, useSpring } from "framer-motion";
+import Footer from "./footer.component";
 
 function Component() {
   const { scrollYProgress } = useScroll();
@@ -105,6 +106,7 @@ const Layout = ({ children }: Props) => {
             <div className='md:flex-1'>
               <NavBar />
               {children}
+              <Footer />
             </div>
           </div>
         </div>
