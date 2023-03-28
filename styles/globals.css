@@ -28,6 +28,20 @@
 
 @media (max-width: 601px) {
   .css-1ingggc {
-    display: block;
+    display: block!important;
   }
+}
+
+.dark .css-1q2h7u5.Mui-selected, 
+.dark .css-251er.Mui-selected{
+  color: #2dd4bf;
+}
+.dark .css-1q2h7u5,
+.dark .css-251er{
+  color: #8892af;
+}
+
+.dark .css-7ozjwe,
+.dark .css-ttwr4n{
+  background-color: #2dd4bf;
 }
