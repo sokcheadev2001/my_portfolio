@@ -14,12 +14,12 @@ const Footer: FC = () => {
       </div>{" "}
       <div className='mt-12 flex justify-center'>
         <div className='w-8 h-8 rounded-full'>
-          <a href='https://t.me/leangsokchea' target='_blank'>
+          <a href='https://t.me/leangsokchea'>
             <FaTelegram className='text-3xl' />
           </a>
         </div>{" "}
         <div className='w-8 h-8 rounded-full ml-5'>
-          <a href='https://instagram.com/lx_chea/' target='_blank'>
+          <a href='https://instagram.com/lx_chea/'>
             <FaInstagram className='text-3xl' />
           </a>
         </div>
