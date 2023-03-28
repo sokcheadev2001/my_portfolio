@@ -6,30 +6,6 @@ import VerticalTabs from "../mui/tab";
 const Experiences = () => {
   return (
     <Section>
-      <style jsx global>
-        {`
-          .dark .css-10d9dml-MuiTabs-indicator,
-          .dark .css-1aquho2-MuiTabs-indicator {
-            background-color: #2dd4bf;
-          }
-
-          .dark .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected,
-          .dark .css-1ujykiq-MuiButtonBase-root-MuiTab-root.Mui-selected {
-            color: #2dd4bf;
-          }
-
-          .dark .css-1h9z7r5-MuiButtonBase-root-MuiTab-root,
-          .dark .css-1ujykiq-MuiButtonBase-root-MuiTab-root {
-            color: #8892af;
-          }
-
-          @media (max-width: 601px) {
-            .css-1ingggc {
-              display: block;
-            }
-          }
-        `}
-      </style>
       <div className='md:mt-24 mt-16'>
         <motion.div
           initial={{ y: 100, opacity: 0 }}

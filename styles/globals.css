@@ -11,3 +11,23 @@
   transform-origin: 0%;
 }
 
+.dark .css-10d9dml-MuiTabs-indicator,
+.dark .css-1aquho2-MuiTabs-indicator {
+  background-color: #2dd4bf;
+}
+
+.dark .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected,
+.dark .css-1ujykiq-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #2dd4bf;
+}
+
+.dark .css-1h9z7r5-MuiButtonBase-root-MuiTab-root,
+.dark .css-1ujykiq-MuiButtonBase-root-MuiTab-root {
+  color: #8892af;
+}
+
+@media (max-width: 601px) {
+  .css-1ingggc {
+    display: block;
+  }
+}
