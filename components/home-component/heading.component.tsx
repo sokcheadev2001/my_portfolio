@@ -9,7 +9,7 @@ const Heading = ({ title, name, position, description }: User) => {
       key={index}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ delay: index / 3.2, duration: 1.2 }}
+      transition={{ delay: index / 3, duration: 1.5 }}
     >
       {nametext}
     </motion.span>

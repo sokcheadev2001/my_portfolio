@@ -12,7 +12,7 @@ const Footer: FC = () => {
       <div className='mt-4 font-medium text-xl dark:text-brightGray text-lightGray mb-3'>
         <a
           href='mailto:sokchealeang.dev@gmail.com'
-          className='hover:text-white'
+          className='dark:hover:text-white hover:text-gray-800'
         >
           sokchealeang.dev@gmail.com
         </a>
@@ -20,12 +20,12 @@ const Footer: FC = () => {
       <div className='mt-5 flex justify-center'>
         <div className='w-8 h-8 rounded-full'>
           <a href='https://t.me/leangsokchea'>
-            <FaTelegram className='text-3xl dark:text-brightGray text-gray-800 dark:hover:text-white' />
+            <FaTelegram className='text-3xl dark:text-brightGray text-gray-800 dark:hover:text-white hover:text-lightGray' />
           </a>
         </div>
         <div className='w-8 h-8 rounded-full ml-5'>
           <a href='https://instagram.com/lx_chea/'>
-            <FaInstagram className='text-3xl dark:text-brightGray text-gray-800 dark:hover:text-white' />
+            <FaInstagram className='text-3xl dark:text-brightGray text-gray-800 dark:hover:text-white hover:text-lightGray' />
           </a>
         </div>
       </div>

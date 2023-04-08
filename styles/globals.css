@@ -15,7 +15,14 @@
 .dark .css-1aquho2-MuiTabs-indicator {
   background-color: #2dd4bf;
 }
-
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected,
+.css-1ujykiq-MuiButtonBase-root-MuiTab-root.Mui-selected{
+  color:#0D9488;
+}
+.css-10d9dml-MuiTabs-indicator,
+.css-1aquho2-MuiTabs-indicator{
+  background-color: #0D9488;
+}
 .dark .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected,
 .dark .css-1ujykiq-MuiButtonBase-root-MuiTab-root.Mui-selected {
   color: #2dd4bf;
@@ -47,4 +54,16 @@
 .dark .css-7ozjwe,
 .dark .css-ttwr4n{
   background-color: #2dd4bf;
+}
+
+.css-1q2h7u5.Mui-selected,
+.css-251er.Mui-selected
+{
+  color:#0D9488;
+}
+
+.css-7ozjwe,
+.css-ttwr4n
+{
+  background-color: #0D9488;
 }
