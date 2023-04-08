@@ -16,12 +16,12 @@
   background-color: #2dd4bf;
 }
 .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected,
-.css-1ujykiq-MuiButtonBase-root-MuiTab-root.Mui-selected{
-  color:#0D9488;
+.css-1ujykiq-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #0d9488;
 }
 .css-10d9dml-MuiTabs-indicator,
-.css-1aquho2-MuiTabs-indicator{
-  background-color: #0D9488;
+.css-1aquho2-MuiTabs-indicator {
+  background-color: #0d9488;
 }
 .dark .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected,
 .dark .css-1ujykiq-MuiButtonBase-root-MuiTab-root.Mui-selected {
@@ -38,32 +38,33 @@
 }
 @media (max-width: 601px) {
   .css-1ingggc {
-    display: block!important;
+    display: block !important;
+  }
+  .css-19kzrtu {
+    padding: 24px 0px;
   }
 }
 
-.dark .css-1q2h7u5.Mui-selected, 
-.dark .css-251er.Mui-selected{
+.dark .css-1q2h7u5.Mui-selected,
+.dark .css-251er.Mui-selected {
   color: #2dd4bf;
 }
 .dark .css-1q2h7u5,
-.dark .css-251er{
+.dark .css-251er {
   color: #8892af;
 }
 
 .dark .css-7ozjwe,
-.dark .css-ttwr4n{
+.dark .css-ttwr4n {
   background-color: #2dd4bf;
 }
 
-.css-1q2h7u5.Mui-selected,
-.css-251er.Mui-selected
-{
-  color:#0D9488;
+.light .css-1q2h7u5.Mui-selected,
+.light .css-251er.Mui-selected {
+  color: #0d9488 !important;
 }
 
-.css-7ozjwe,
-.css-ttwr4n
-{
-  background-color: #0D9488;
+.light .css-7ozjwe,
+.light .css-ttwr4n {
+  background-color: #0d9488 !important;
 }

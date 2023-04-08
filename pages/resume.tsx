@@ -1,7 +1,10 @@
 import { FC } from "react";
+import Tech from "../components/resume-component/tech.component";
 
 const Resume: FC = () => {
-  return <div>My Resume Page</div>;
+  return (
+    <Tech/>
+  );
 };
 
 export default Resume;

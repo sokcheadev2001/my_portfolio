@@ -1,7 +1,12 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { FC } from "react";
-import { SiGithub, SiLinkedin, SiTwitter } from "react-icons/si";
+import {
+  SiGmail,
+  SiGithub,
+  SiLinkedin,
+  SiTwitter,
+} from "react-icons/si";
 const SocialSide: FC = () => {
   return (
     <div className='w-32'>
@@ -53,6 +58,21 @@ const SocialSide: FC = () => {
               aria-label='twitter profile'
             >
               <SiTwitter className='text-2xl  dark:text-brightGray text-gray-800 dark:hover:text-white' />
+            </Link>
+          </motion.li>
+          <motion.li
+            whileHover={{
+              scale: 1.2,
+              transition: { duration: 0.3 },
+            }}
+            whileTap={{ scale: 0.9 }}
+            className='mt-4'
+          >
+            <Link
+              href='mailto:sokchealeang.dev@gmail.com'
+              aria-label='twitter profile'
+            >
+              <SiGmail className='text-2xl  dark:text-brightGray text-gray-800 dark:hover:text-white' />
             </Link>
           </motion.li>
         </ul>
