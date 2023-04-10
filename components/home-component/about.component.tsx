@@ -97,7 +97,7 @@ const IcanDo = () => {
             </motion.ul>
           </div>
           <motion.div
-            className='mx-auto w-52 md:block flex md:flex-1 lg:py-0 md:py-10 md:top-0 md:bottom-0 md:ml-0 hover:dark:drop-shadow-2darkShadow hover:drop-shadow-2lightShadow justify-center'
+            className='mx-auto w-64 md:block flex md:flex-1 lg:py-0 md:py-10 md:top-0 md:bottom-0 md:ml-0 justify-center'
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             whileHover={{
