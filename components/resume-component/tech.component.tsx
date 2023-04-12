@@ -16,6 +16,46 @@ const Tech = () => {
           </h2>
         </motion.div>
         <div className='mt-10'>
+          <div className='dark:bg-primary bg-secondary p-3 mb-8 md:px-10 md:py-5 border-2 border-secondary dark:border-brightGray'>
+            <h3 className='mb-10 dark:text-brightGray text-gray-800'>
+              <i>These are tech I use for building client-side applications</i>
+            </h3>
+            <div className='flex'>
+              <div className='w-16 mb-2'>
+                <a href='https://laravel.com/'>
+                  <Image
+                    src='/lang-img/laravel.png'
+                    className='h-12 logo_lang'
+                    width={48}
+                    height={48}
+                    alt='html'
+                  />
+                </a>
+              </div>
+              <div className='w-16 mb-2'>
+                <a href='https://expressjs.com/'>
+                  <Image
+                    src='/lang-img/express.png'
+                    className='h-12 logo_lang'
+                    width={48}
+                    height={48}
+                    alt='html'
+                  />
+                </a>
+              </div>
+              <div className='w-16 mb-2'>
+                <a href='https://www.mysql.com/'>
+                  <Image
+                    src='/lang-img/mysql.png'
+                    className='h-12 logo_lang'
+                    width={48}
+                    height={48}
+                    alt='html'
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
           <div className='dark:bg-primary bg-secondary p-3 mb-8 md:px-10 md:py-5 border-2 border-secondary dark:border-white'>
             <h3 className='mb-10 dark:text-brightGray text-gray-800'>
               <i>These are tech I use for building client-side applications</i>
@@ -25,7 +65,7 @@ const Tech = () => {
                 <a href='https://developer.mozilla.org/en-US/docs/Web/HTML'>
                   <Image
                     src='/lang-img/html.png'
-                    className='h-12'
+                    className='h-12 logo_lang'
                     width={48}
                     height={48}
                     alt='html'
@@ -36,25 +76,7 @@ const Tech = () => {
                 <a href='https://developer.mozilla.org/en-US/docs/Web/CSS'>
                   <Image
                     src='/lang-img/css-3.png'
-                    className='h-12'
-                    width={48}
-                    height={48}
-                    alt='html'
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className='dark:bg-primary bg-secondary p-3 mb-8 md:px-10 md:py-5 border-2 border-secondary dark:border-brightGray'>
-            <h3 className='mb-10 dark:text-brightGray text-gray-800'>
-              <i>These are tech I use for building client-side applications</i>
-            </h3>
-            <div className='flex'>
-              <div className='w-16 mb-2'>
-                <a href='https://developer.mozilla.org/en-US/docs/Web/HTML'>
-                  <Image
-                    src='/lang-img/html.png'
-                    className='h-12'
+                    className='h-12 logo_lang'
                     width={48}
                     height={48}
                     alt='html'
@@ -62,10 +84,32 @@ const Tech = () => {
                 </a>
               </div>
               <div className='w-16 mb-2'>
-                <a href='https://developer.mozilla.org/en-US/docs/Web/CSS'>
+                <a href='https://tailwindcss.com/'>
                   <Image
-                    src='/lang-img/css-3.png'
-                    className='h-12'
+                    src='/lang-img/tailwindcss.png'
+                    className='h-12 logo_lang'
+                    width={48}
+                    height={48}
+                    alt='html'
+                  />
+                </a>
+              </div>
+              <div className='w-16 mb-2'>
+                <a href='https://react.dev/'>
+                  <Image
+                    src='/lang-img/react.png'
+                    className='h-12 logo_lang'
+                    width={48}
+                    height={48}
+                    alt='html'
+                  />
+                </a>
+              </div>
+              <div className='w-16 mb-2'>
+                <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'>
+                  <Image
+                    src='/lang-img/javascript.png'
+                    className='h-12 logo_lang'
                     width={48}
                     height={48}
                     alt='html'
