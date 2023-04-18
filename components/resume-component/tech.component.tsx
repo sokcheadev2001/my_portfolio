@@ -18,13 +18,35 @@ const Tech = () => {
         <div className='mt-10'>
           <div className='dark:bg-primary bg-secondary p-3 mb-8 md:px-10 md:py-5 border-2 border-secondary dark:border-brightGray'>
             <h3 className='mb-10 dark:text-brightGray text-gray-800'>
-              <i>These are tech I use for building client-side applications</i>
+              <i>These are tech I use for building server-side applications</i>
             </h3>
             <div className='flex'>
+              <div className='w-16 mb-2'>
+                <a href='https://www.php.net/'>
+                  <Image
+                    src='/lang-img/php.png'
+                    className='h-12 logo_lang'
+                    width={48}
+                    height={48}
+                    alt='php'
+                  />
+                </a>
+              </div>
               <div className='w-16 mb-2'>
                 <a href='https://laravel.com/'>
                   <Image
                     src='/lang-img/laravel.png'
+                    className='h-12 logo_lang'
+                    width={48}
+                    height={48}
+                    alt='laravel'
+                  />
+                </a>
+              </div>
+              <div className='w-16 mb-2'>
+                <a href='https://nodejs.org/en'>
+                  <Image
+                    src='/lang-img/nodejs.png'
                     className='h-12 logo_lang'
                     width={48}
                     height={48}
@@ -39,7 +61,18 @@ const Tech = () => {
                     className='h-12 logo_lang'
                     width={48}
                     height={48}
-                    alt='html'
+                    alt='express js'
+                  />
+                </a>
+              </div>
+              <div className='w-16 mb-2'>
+                <a href='https://www.typescriptlang.org/'>
+                  <Image
+                    src='/lang-img/typescript.png'
+                    className='h-12 logo_lang'
+                    width={48}
+                    height={48}
+                    alt='typescript'
                   />
                 </a>
               </div>
@@ -50,7 +83,7 @@ const Tech = () => {
                     className='h-12 logo_lang'
                     width={48}
                     height={48}
-                    alt='html'
+                    alt='mysql'
                   />
                 </a>
               </div>
@@ -79,7 +112,7 @@ const Tech = () => {
                     className='h-12 logo_lang'
                     width={48}
                     height={48}
-                    alt='html'
+                    alt='css'
                   />
                 </a>
               </div>
@@ -90,7 +123,7 @@ const Tech = () => {
                     className='h-12 logo_lang'
                     width={48}
                     height={48}
-                    alt='html'
+                    alt='tailwindcss'
                   />
                 </a>
               </div>
@@ -101,7 +134,18 @@ const Tech = () => {
                     className='h-12 logo_lang'
                     width={48}
                     height={48}
-                    alt='html'
+                    alt='react'
+                  />
+                </a>
+              </div>
+              <div className='w-16 mb-2'>
+                <a href='https://nextjs.org/'>
+                  <Image
+                    src='/lang-img/nextjs.png'
+                    className='h-12 logo_lang'
+                    width={48}
+                    height={48}
+                    alt='next js'
                   />
                 </a>
               </div>
@@ -112,11 +156,87 @@ const Tech = () => {
                     className='h-12 logo_lang'
                     width={48}
                     height={48}
-                    alt='html'
+                    alt='javascript'
                   />
                 </a>
               </div>
             </div>
+          </div>
+          <div className='dark:bg-primary bg-secondary p-3 mb-8 md:px-10 md:py-5 border-2 border-secondary dark:border-white'>
+            <h3 className='mb-10 dark:text-brightGray text-gray-800'>
+              <i>Other tools... and more!</i>
+            </h3>
+            <div className='flex'>
+            <div className='w-16 mb-2'>
+                <a href='https://npmjs.com/'>
+                  <Image
+                    src='/lang-img/npm.png'
+                    className='h-12 logo_lang'
+                    width={48}
+                    height={48}
+                    alt='npm'
+                  />
+                </a>
+              </div>
+              <div className='w-16 mb-2'>
+                <a href='https://www.heroku.com/'>
+                  <Image
+                    src='/lang-img/heroku.png'
+                    className='h-12 logo_lang'
+                    width={48}
+                    height={48}
+                    alt='heroku'
+                  />
+                </a>
+              </div>
+              <div className='w-16 mb-2'>
+                <a href='https://github.com/'>
+                  <Image
+                    src='/lang-img/github.png'
+                    className='h-12 logo_lang'
+                    width={48}
+                    height={48}
+                    alt='github'
+                  />
+                </a>
+              </div>
+              <div className='w-16 mb-2'>
+                <a href='https://www.docker.com/'>
+                  <Image
+                    src='/lang-img/docker.webp'
+                    className='h-12 logo_lang'
+                    width={48}
+                    height={48}
+                    alt='docker'
+                  />
+                </a>
+              </div>
+              <div className='w-16 mb-2'>
+                <a href='https://www.digitalocean.com/'>
+                  <Image
+                    src='/lang-img/digital_ocean.png'
+                    className='h-12 logo_lang'
+                    width={48}
+                    height={48}
+                    alt='digital ocean'
+                  />
+                </a>
+              </div>
+              <div className='w-16 mb-2'>
+                <a href='https://vercel.com/'>
+                  <Image
+                    src='/lang-img/vercel.svg'
+                    className='h-12 logo_lang'
+                    width={48}
+                    height={48}
+                    alt='vercel'
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-between items-center">
+            <a href="" className="mt-10 dark:text-teal-400 text-teal-600 md:py-4 md:px-8 py-2 px-4 border border-teal-400 dark:border-teal-600 rounded-md dark:hover:bg-gray-800 hover:bg-gray-100">Download My Resume</a>
           </div>
         </div>
       </div>
