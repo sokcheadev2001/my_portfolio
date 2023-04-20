@@ -12,16 +12,21 @@ const Tech = () => {
           className='flex after:content-[""] after:md:w-74 after:w-32 after:mt-5 after:ml-5 after:h-0.1 after:bg-cyan-900'
         >
           <h2 className='dark:text-brightGray text-gray-800 leading-none text-2xl font-bold capitalize'>
-            Programming Languages
+            Tech I Love
           </h2>
         </motion.div>
         <div className='mt-10'>
-          <div className='dark:bg-primary bg-secondary p-3 mb-8 md:px-10 md:py-5 border-2 border-secondary dark:border-brightGray'>
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 2.2, duration: 1 }}
+            className='dark:bg-primary bg-secondary p-3 mb-8 md:px-10 md:py-5 rounded-xl border-2 border-secondary dark:border-brightGray'
+          >
             <h3 className='mb-10 dark:text-brightGray text-gray-800'>
               <i>These are tech I use for building server-side applications</i>
             </h3>
-            <div className='flex'>
-              <div className='w-16 mb-2'>
+            <div className=''>
+              <div className='w-16 mb-2 inline-block'>
                 <a href='https://www.php.net/'>
                   <Image
                     src='/lang-img/php.png'
@@ -32,7 +37,7 @@ const Tech = () => {
                   />
                 </a>
               </div>
-              <div className='w-16 mb-2'>
+              <div className='w-16 mb-2 inline-block'>
                 <a href='https://laravel.com/'>
                   <Image
                     src='/lang-img/laravel.png'
@@ -43,7 +48,7 @@ const Tech = () => {
                   />
                 </a>
               </div>
-              <div className='w-16 mb-2'>
+              <div className='w-16 mb-2 inline-block'>
                 <a href='https://nodejs.org/en'>
                   <Image
                     src='/lang-img/nodejs.png'
@@ -54,7 +59,7 @@ const Tech = () => {
                   />
                 </a>
               </div>
-              <div className='w-16 mb-2'>
+              <div className='w-16 mb-2 inline-block'>
                 <a href='https://expressjs.com/'>
                   <Image
                     src='/lang-img/express.png'
@@ -65,7 +70,7 @@ const Tech = () => {
                   />
                 </a>
               </div>
-              <div className='w-16 mb-2'>
+              <div className='w-16 mb-2 inline-block'>
                 <a href='https://www.typescriptlang.org/'>
                   <Image
                     src='/lang-img/typescript.png'
@@ -76,7 +81,7 @@ const Tech = () => {
                   />
                 </a>
               </div>
-              <div className='w-16 mb-2'>
+              <div className='w-16 mb-2 inline-block'>
                 <a href='https://www.mysql.com/'>
                   <Image
                     src='/lang-img/mysql.png'
@@ -88,13 +93,18 @@ const Tech = () => {
                 </a>
               </div>
             </div>
-          </div>
-          <div className='dark:bg-primary bg-secondary p-3 mb-8 md:px-10 md:py-5 border-2 border-secondary dark:border-white'>
+          </motion.div>
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 2.4, duration: 1 }}
+            className='dark:bg-primary bg-secondary p-3 mb-8 md:px-10 md:py-5 rounded-xl border-2 border-secondary dark:border-brightGray'
+          >
             <h3 className='mb-10 dark:text-brightGray text-gray-800'>
               <i>These are tech I use for building client-side applications</i>
             </h3>
-            <div className='flex'>
-              <div className='w-16 mb-2'>
+            <div className=''>
+              <div className='w-16 mb-2 inline-block'>
                 <a href='https://developer.mozilla.org/en-US/docs/Web/HTML'>
                   <Image
                     src='/lang-img/html.png'
@@ -105,7 +115,7 @@ const Tech = () => {
                   />
                 </a>
               </div>
-              <div className='w-16 mb-2'>
+              <div className='w-16 mb-2 inline-block'>
                 <a href='https://developer.mozilla.org/en-US/docs/Web/CSS'>
                   <Image
                     src='/lang-img/css-3.png'
@@ -116,7 +126,7 @@ const Tech = () => {
                   />
                 </a>
               </div>
-              <div className='w-16 mb-2'>
+              <div className='w-16 mb-2 inline-block'>
                 <a href='https://tailwindcss.com/'>
                   <Image
                     src='/lang-img/tailwindcss.png'
@@ -127,7 +137,7 @@ const Tech = () => {
                   />
                 </a>
               </div>
-              <div className='w-16 mb-2'>
+              <div className='w-16 mb-2 inline-block'>
                 <a href='https://react.dev/'>
                   <Image
                     src='/lang-img/react.png'
@@ -138,7 +148,7 @@ const Tech = () => {
                   />
                 </a>
               </div>
-              <div className='w-16 mb-2'>
+              <div className='w-16 mb-2 inline-block'>
                 <a href='https://nextjs.org/'>
                   <Image
                     src='/lang-img/nextjs.png'
@@ -149,7 +159,7 @@ const Tech = () => {
                   />
                 </a>
               </div>
-              <div className='w-16 mb-2'>
+              <div className='w-16 mb-2 inline-block'>
                 <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'>
                   <Image
                     src='/lang-img/javascript.png'
@@ -161,13 +171,18 @@ const Tech = () => {
                 </a>
               </div>
             </div>
-          </div>
-          <div className='dark:bg-primary bg-secondary p-3 mb-8 md:px-10 md:py-5 border-2 border-secondary dark:border-white'>
+          </motion.div>
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 2.6, duration: 1 }}
+            className='dark:bg-primary bg-secondary p-3 mb-8 md:px-10 md:py-5 rounded-xl border-2 border-secondary dark:border-brightGray'
+          >
             <h3 className='mb-10 dark:text-brightGray text-gray-800'>
               <i>Other tools... and more!</i>
             </h3>
-            <div className='flex'>
-            <div className='w-16 mb-2'>
+            <div className=''>
+              <div className='w-16 mb-2 inline-block'>
                 <a href='https://npmjs.com/'>
                   <Image
                     src='/lang-img/npm.png'
@@ -178,7 +193,7 @@ const Tech = () => {
                   />
                 </a>
               </div>
-              <div className='w-16 mb-2'>
+              <div className='w-16 mb-2 inline-block'>
                 <a href='https://www.heroku.com/'>
                   <Image
                     src='/lang-img/heroku.png'
@@ -189,7 +204,7 @@ const Tech = () => {
                   />
                 </a>
               </div>
-              <div className='w-16 mb-2'>
+              <div className='w-16 mb-2 inline-block'>
                 <a href='https://github.com/'>
                   <Image
                     src='/lang-img/github.png'
@@ -200,7 +215,7 @@ const Tech = () => {
                   />
                 </a>
               </div>
-              <div className='w-16 mb-2'>
+              <div className='w-16 mb-2 inline-block'>
                 <a href='https://www.docker.com/'>
                   <Image
                     src='/lang-img/docker.webp'
@@ -211,7 +226,18 @@ const Tech = () => {
                   />
                 </a>
               </div>
-              <div className='w-16 mb-2'>
+              <div className='w-16 mb-2 inline-block'>
+                <a href='https://cpanel.net/'>
+                  <Image
+                    src='/lang-img/cPanel.svg'
+                    className='h-12 logo_lang'
+                    width={48}
+                    height={48}
+                    alt='cPanel'
+                  />
+                </a>
+              </div>
+              <div className='w-16 mb-2 inline-block'>
                 <a href='https://www.digitalocean.com/'>
                   <Image
                     src='/lang-img/digital_ocean.png'
@@ -222,7 +248,7 @@ const Tech = () => {
                   />
                 </a>
               </div>
-              <div className='w-16 mb-2'>
+              <div className='w-16 mb-2 inline-block'>
                 <a href='https://vercel.com/'>
                   <Image
                     src='/lang-img/vercel.svg'
@@ -234,10 +260,20 @@ const Tech = () => {
                 </a>
               </div>
             </div>
-          </div>
-          <div className="flex justify-between items-center">
-            <a href="" className="mt-10 dark:text-teal-400 text-teal-600 md:py-4 md:px-8 py-2 px-4 border border-teal-400 dark:border-teal-600 rounded-md dark:hover:bg-gray-800 hover:bg-gray-100">Download My Resume</a>
-          </div>
+          </motion.div>
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 2.8, duration: 1 }}
+            className='flex justify-between items-center'
+          >
+            <a
+              href=''
+              className='mt-10 dark:text-teal-400 text-teal-600 md:py-4 md:px-8 py-2 px-4 border border-teal-400 dark:border-teal-600 rounded-md dark:hover:bg-gray-800 hover:bg-gray-100'
+            >
+              Download My Resume
+            </a>
+          </motion.div>
         </div>
       </div>
     </Section>
