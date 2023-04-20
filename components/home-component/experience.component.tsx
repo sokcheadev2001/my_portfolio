@@ -17,9 +17,14 @@ const Experiences = () => {
             Experience
           </h2>
         </motion.div>
-        <div className='mt-10'>
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 2.2, duration: 1 }}
+          className='mt-10'
+        >
           <VerticalTabs />
-        </div>
+        </motion.div>
       </div>
     </Section>
   );

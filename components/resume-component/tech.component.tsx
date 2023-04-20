@@ -8,18 +8,18 @@ const Tech = () => {
         <motion.div
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 1.8, duration: 1 }}
+          transition={{ delay: 1, duration: 1 }}
           className='flex after:content-[""] after:md:w-74 after:w-32 after:mt-5 after:ml-5 after:h-0.1 after:bg-cyan-900'
         >
           <h2 className='dark:text-brightGray text-gray-800 leading-none text-2xl font-bold capitalize'>
-            Tech I Love
+            Tech I Worked
           </h2>
         </motion.div>
         <div className='mt-10'>
           <motion.div
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 2.2, duration: 1 }}
+            transition={{ delay: 1.2, duration: 1 }}
             className='dark:bg-primary bg-secondary p-3 mb-8 md:px-10 md:py-5 rounded-xl border-2 border-secondary dark:border-brightGray'
           >
             <h3 className='mb-10 dark:text-brightGray text-gray-800'>
@@ -97,7 +97,7 @@ const Tech = () => {
           <motion.div
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 2.4, duration: 1 }}
+            transition={{ delay: 1.4, duration: 1 }}
             className='dark:bg-primary bg-secondary p-3 mb-8 md:px-10 md:py-5 rounded-xl border-2 border-secondary dark:border-brightGray'
           >
             <h3 className='mb-10 dark:text-brightGray text-gray-800'>
@@ -175,7 +175,7 @@ const Tech = () => {
           <motion.div
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 2.6, duration: 1 }}
+            transition={{ delay: 1.6, duration: 1 }}
             className='dark:bg-primary bg-secondary p-3 mb-8 md:px-10 md:py-5 rounded-xl border-2 border-secondary dark:border-brightGray'
           >
             <h3 className='mb-10 dark:text-brightGray text-gray-800'>
@@ -264,7 +264,7 @@ const Tech = () => {
           <motion.div
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 2.8, duration: 1 }}
+            transition={{ delay: 1.8, duration: 1 }}
             className='flex justify-between items-center'
           >
             <a

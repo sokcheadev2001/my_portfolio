@@ -34,54 +34,61 @@ const NavBar: FC = () => {
     }
   };
   return (
-    <nav>
-      <div className='hidden md:flex'>
-        <div className='md:flex-1 text-sm'>
-          <div className='dark:text-brightGray text-gray-800 font-bold md:ml-4 inline-block py-1 px-2 f-link'>
-            <a href='mailto:leang.sokchea13@gmail.com'>
-              leang.sokchea13@gmail.com
-            </a>
+    <>
+      <nav>
+        <div className='hidden md:flex'>
+          <div className='md:flex-1 text-sm'>
+            <div className='dark:text-brightGray text-gray-800 font-bold md:ml-4 inline-block py-1 px-2 f-link'>
+              <a href='mailto:leang.sokchea13@gmail.com'>
+                leang.sokchea13@gmail.com
+              </a>
+            </div>
+            <span className='cursor-pointer ml-10 dark:text-white'>
+              {handleThemeChange()}
+            </span>
           </div>
+          <div className='flex gap-5'>
+            <Link
+              href='/resume'
+              className='dark:text-brightGray text-gray-800 dark:hover:text-teal-400 hover:text-lightGray'
+            >
+              <motion.button
+                className='flex items-center justify-items-center'
+                whileHover={{
+                  scale: 1.1,
+                  transition: { duration: 0.3 },
+                }}
+                whileTap={{ scale: 0.8 }}
+              >
+                <IoCodeSlashSharp className='text-2xl inline-block mr-1' />
+                Resume
+              </motion.button>
+            </Link>
+            <Link
+              href='/contact'
+              className='dark:text-brightGray text-gray-800 dark:hover:text-teal-400 hover:text-lightGray'
+            >
+              <motion.button
+                className='flex items-center justify-items-center'
+                whileHover={{
+                  scale: 1.1,
+                  transition: { duration: 0.3 },
+                }}
+                whileTap={{ scale: 0.8 }}
+              >
+                <SiMinutemailer className='text-2xl inline-block mr-1' />
+                Contact
+              </motion.button>
+            </Link>
+          </div>
+        </div>
+        <span className='absolute left-0 top-0 ml-24 mt-3 md:hidden'>
           <span className='cursor-pointer ml-10 dark:text-white'>
             {handleThemeChange()}
           </span>
-        </div>
-        <div className='flex gap-5'>
-          <Link
-            href='/resume'
-            className='dark:text-brightGray text-gray-800 dark:hover:text-teal-400 hover:text-lightGray'
-          >
-            <motion.button
-              className='flex items-center justify-items-center'
-              whileHover={{
-                scale: 1.1,
-                transition: { duration: 0.3 },
-              }}
-              whileTap={{ scale: 0.8 }}
-            >
-              <IoCodeSlashSharp className='text-2xl inline-block mr-1' />
-              Resume
-            </motion.button>
-          </Link>
-          <Link
-            href='/contact'
-            className='dark:text-brightGray text-gray-800 dark:hover:text-teal-400 hover:text-lightGray'
-          >
-            <motion.button
-              className='flex items-center justify-items-center'
-              whileHover={{
-                scale: 1.1,
-                transition: { duration: 0.3 },
-              }}
-              whileTap={{ scale: 0.8 }}
-            >
-              <SiMinutemailer className='text-2xl inline-block mr-1' />
-              Contact
-            </motion.button>
-          </Link>
-        </div>
-      </div>
-    </nav>
+        </span>
+      </nav>
+    </>
   );
 };
 

@@ -105,15 +105,15 @@ export default function VerticalTabs() {
           DEC 2021 - PRESENT
         </p>
         <ul className='pt-6 max-w-xl'>
-          <li className='pb-4 dark:text-darkGray text-lightGray text-sm relative md:pl-5 pl-3 before:content-["▹"] before:absolute before:left-0 before:text-teal-400'>
+          <li className='pb-4 dark:text-darkGray text-lightGray text-base relative md:pl-8 pl-5 before:content-["▹"] before:absolute before:left-0 before:text-teal-400'>
             Developed and maintained code for client websites primarily using
             Laravel as backend.
           </li>
-          <li className='pb-4 dark:text-darkGray text-lightGray text-sm relative md:pl-5 pl-3 before:content-["▹"] before:absolute before:left-0 before:text-teal-400'>
+          <li className='pb-4 dark:text-darkGray text-lightGray text-base relative md:pl-8 pl-5 before:content-["▹"] before:absolute before:left-0 before:text-teal-400'>
             Experience with customized Wordpress site like WooCommerce, Plugins,
             Themes, etc.
           </li>
-          <li className='pb-4 dark:text-darkGray text-lightGray text-sm relative md:pl-5 pl-3 before:content-["▹"] before:absolute before:left-0 before:text-teal-400'>
+          <li className='pb-4 dark:text-darkGray text-lightGray text-base relative md:pl-8 pl-5 before:content-["▹"] before:absolute before:left-0 before:text-teal-400'>
             Collaborated with senior engineers following best practices for the
             best software development including coding standards, code reviews,
             source control management, testing, and deploying.
