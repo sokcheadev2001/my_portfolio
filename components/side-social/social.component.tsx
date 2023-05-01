@@ -1,18 +1,53 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { FC } from "react";
+import { IoCodeSlashSharp } from "react-icons/io5";
 import {
   SiGmail,
   SiGithub,
   SiLinkedin,
   SiTwitter,
+  SiMinutemailer,
 } from "react-icons/si";
 const SocialSide: FC = () => {
   return (
-    <div className='w-32'>
-      <Link href='/' className='dark:text-brightGray'>
+    <div className='md:w-32 md:block flex'>
+      <Link href='/' className='dark:text-brightGray flex-1'>
         Sochea
       </Link>
+      <div className='md:hidden flex gap-4 justify-end'>
+        <Link
+          href='/resume'
+          className='dark:text-brightGray text-gray-800 dark:hover:text-teal-400 hover:text-lightGray'
+        >
+          <motion.button
+            className='flex items-center justify-items-center'
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.3 },
+            }}
+            whileTap={{ scale: 0.8 }}
+          >
+            Resume
+          </motion.button>
+        </Link>
+        <Link
+          href='/contact'
+          className='dark:text-brightGray text-gray-800 dark:hover:text-teal-400 hover:text-lightGray'
+        >
+          <motion.button
+            className='flex items-center justify-items-center'
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.3 },
+            }}
+            whileTap={{ scale: 0.8 }}
+          >
+            Contact
+          </motion.button>
+        </Link>
+      </div>
+
       <div className='md:mt-64'>
         <ul className='hidden md:block'>
           <motion.li

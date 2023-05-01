@@ -82,11 +82,6 @@ const NavBar: FC = () => {
             </Link>
           </div>
         </div>
-        <span className='absolute left-0 top-0 ml-24 mt-3 md:hidden'>
-          <span className='cursor-pointer ml-10 dark:text-white'>
-            {handleThemeChange()}
-          </span>
-        </span>
       </nav>
     </>
   );
